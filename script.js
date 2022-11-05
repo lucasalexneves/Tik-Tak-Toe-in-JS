@@ -9,5 +9,20 @@ let warning = ''
 let playing = false
 
 // Events
+document.querySelector('.reset').addEventListener('click', reset)
 
 // Functions
+function reset() {
+    warning = ''
+
+    let random = Math.floor(Math.random() * 2)
+    
+    player = (random === 0) ? 'x' : '0'
+    /* if(random === 0){
+        player = 'x'
+    } else {
+        player = "o"
+    } */
+
+   
+}
