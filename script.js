@@ -8,10 +8,23 @@ let player = ''
 let warning = ''
 let playing = false
 
+reset()
+
 // Events
 document.querySelector('.reset').addEventListener('click', reset)
+document.querySelector('.item').forEach(item => {
+    item.addEventListener('click', itemClick)
+});
 
 // Functions
+function itemClick(event){
+    let item = event.target.getAttribute('data-item')
+    if(square[item] === ''){
+        square[item] = player
+        renderSquare()
+    }
+}
+
 function reset() {
     warning = ''
 
