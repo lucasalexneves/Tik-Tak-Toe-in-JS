@@ -76,13 +76,13 @@ function togglePlayer(){
 
 function checkGame() {
     if(checkWinnerFor('x')){
-        warning = 'O "X" venceu'
+        warning = 'The "X" won'
         playing = false
     }else if(checkWinnerFor('o')){
-        warning = 'O "O" venceu'
+        warning = 'The "O" won'
         playing = false
     } else if(isFull()){
-        warning = 'Deu empate'
+        warning = 'Gave a tie'
         playing = false
     }
 }
