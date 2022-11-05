@@ -42,5 +42,6 @@ function renderSquare() {
 }
 
 function renderInformation() {
-
+    document.querySelector('.vez').innerHTML = player
+    document.querySelector('.resultado').innerHTML = warning
 }
