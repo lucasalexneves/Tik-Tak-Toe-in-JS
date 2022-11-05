@@ -24,5 +24,12 @@ function reset() {
         player = "o"
     } */
 
+   for(let i in square){
+    square[i] = '' 
+   }
    
+   playing = true
+
+   renderSquare()
+   renderInformation()
 }
